@@ -562,6 +562,26 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+          <div className="mt-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Наше расположение</CardTitle>
+                <CardDescription>г. Прокопьевск, ул. Гагарина, д. 25</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="aspect-video w-full rounded-lg overflow-hidden">
+                  <iframe 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d3e5f7c9a2b1e4d6c8a9b7e5f3d1c2a&amp;source=constructor" 
+                    width="100%" 
+                    height="100%" 
+                    frameBorder="0"
+                    className="w-full h-full"
+                    title="Карта расположения"
+                  ></iframe>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
