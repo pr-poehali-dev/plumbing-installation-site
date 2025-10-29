@@ -157,6 +157,13 @@ const Index = () => {
                   О нас
                 </a>
                 <a 
+                  href="#portfolio" 
+                  className="text-lg hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Работы
+                </a>
+                <a 
                   href="#contacts" 
                   className="text-lg hover:text-primary transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
@@ -438,7 +445,57 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 px-4 bg-muted/50">
+      <section id="portfolio" className="py-20 px-4 bg-muted/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Наши работы</h2>
+            <p className="text-xl text-muted-foreground">Примеры выполненных проектов</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/04118fb9-c652-434c-8b31-018ad6efa428/files/3d24a583-3e46-4ba4-a679-f2f8b611df59.jpg" 
+                  alt="Установка сантехники"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Монтаж сантехники</CardTitle>
+                <CardDescription>Комплексная установка в новой квартире</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/04118fb9-c652-434c-8b31-018ad6efa428/files/3a713af4-f444-4442-9b48-fa59cc785841.jpg" 
+                  alt="Установка радиаторов"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Система отопления</CardTitle>
+                <CardDescription>Монтаж радиаторов в частном доме</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/04118fb9-c652-434c-8b31-018ad6efa428/files/920c9479-7e65-4cbf-ab0f-39a56e183cb9.jpg" 
+                  alt="Душевая кабина"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Душевая кабина</CardTitle>
+                <CardDescription>Полная установка с плиткой</CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Контакты</h2>
@@ -523,6 +580,7 @@ const Index = () => {
             <a href="#calculator" className="hover:text-primary transition-colors">Калькулятор</a>
             <a href="#price" className="hover:text-primary transition-colors">Прайс</a>
             <a href="#about" className="hover:text-primary transition-colors">О нас</a>
+            <a href="#portfolio" className="hover:text-primary transition-colors">Работы</a>
             <a href="#contacts" className="hover:text-primary transition-colors">Контакты</a>
           </div>
           <Separator className="my-6 bg-secondary-foreground/20" />
