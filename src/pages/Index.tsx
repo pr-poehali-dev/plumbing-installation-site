@@ -344,60 +344,92 @@ const Index = () => {
             <h2 className="text-4xl font-bold mb-4">Прайс-лист</h2>
             <p className="text-xl text-muted-foreground">Базовые цены на популярные услуги</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Droplets" className="text-primary" />
-                  Монтаж раковины
-                </CardTitle>
-                <CardDescription className="text-2xl font-bold text-primary">от 2 500 ₽</CardDescription>
+                <CardTitle className="text-2xl">Цены на сантехнические работы</CardTitle>
+                <CardDescription>Актуальный прайс-лист для г. Прокопьевск</CardDescription>
               </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Bath" className="text-primary" />
-                  Установка ванны
-                </CardTitle>
-                <CardDescription className="text-2xl font-bold text-primary">от 5 000 ₽</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="ShowerHead" className="text-primary" />
-                  Монтаж душевой
-                </CardTitle>
-                <CardDescription className="text-2xl font-bold text-primary">от 7 000 ₽</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Pipe" className="text-primary" />
-                  Замена труб (1 м)
-                </CardTitle>
-                <CardDescription className="text-2xl font-bold text-primary">от 800 ₽</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Gauge" className="text-primary" />
-                  Установка счётчика
-                </CardTitle>
-                <CardDescription className="text-2xl font-bold text-primary">от 1 500 ₽</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Flame" className="text-primary" />
-                  Радиатор отопления
-                </CardTitle>
-                <CardDescription className="text-2xl font-bold text-primary">от 4 000 ₽</CardDescription>
-              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="border-b pb-4">
+                    <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                      <Icon name="Droplets" className="text-primary" size={20} />
+                      Установка сантехники
+                    </h3>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between"><span>Установка унитаза</span><span className="font-semibold">от 1 800 ₽</span></div>
+                      <div className="flex justify-between"><span>Монтаж раковины с тумбой</span><span className="font-semibold">от 2 500 ₽</span></div>
+                      <div className="flex justify-between"><span>Установка ванны акриловой</span><span className="font-semibold">от 4 500 ₽</span></div>
+                      <div className="flex justify-between"><span>Установка ванны чугунной</span><span className="font-semibold">от 5 500 ₽</span></div>
+                      <div className="flex justify-between"><span>Монтаж душевой кабины</span><span className="font-semibold">от 6 000 ₽</span></div>
+                      <div className="flex justify-between"><span>Установка биде</span><span className="font-semibold">от 1 500 ₽</span></div>
+                      <div className="flex justify-between"><span>Монтаж смесителя</span><span className="font-semibold">от 800 ₽</span></div>
+                    </div>
+                  </div>
+
+                  <div className="border-b pb-4">
+                    <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                      <Icon name="Pipe" className="text-primary" size={20} />
+                      Трубы и водоснабжение
+                    </h3>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between"><span>Замена труб водоснабжения (1 м)</span><span className="font-semibold">от 750 ₽</span></div>
+                      <div className="flex justify-between"><span>Замена канализационных труб (1 м)</span><span className="font-semibold">от 650 ₽</span></div>
+                      <div className="flex justify-between"><span>Монтаж стояков (1 м)</span><span className="font-semibold">от 1 200 ₽</span></div>
+                      <div className="flex justify-between"><span>Установка фильтра грубой очистки</span><span className="font-semibold">от 900 ₽</span></div>
+                      <div className="flex justify-between"><span>Установка редуктора давления</span><span className="font-semibold">от 1 100 ₽</span></div>
+                    </div>
+                  </div>
+
+                  <div className="border-b pb-4">
+                    <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                      <Icon name="Flame" className="text-primary" size={20} />
+                      Отопление
+                    </h3>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between"><span>Установка радиатора отопления</span><span className="font-semibold">от 3 500 ₽</span></div>
+                      <div className="flex justify-between"><span>Замена радиатора</span><span className="font-semibold">от 2 800 ₽</span></div>
+                      <div className="flex justify-between"><span>Монтаж полотенцесушителя</span><span className="font-semibold">от 2 500 ₽</span></div>
+                      <div className="flex justify-between"><span>Установка терморегулятора</span><span className="font-semibold">от 800 ₽</span></div>
+                      <div className="flex justify-between"><span>Опрессовка системы отопления</span><span className="font-semibold">от 1 500 ₽</span></div>
+                    </div>
+                  </div>
+
+                  <div className="border-b pb-4">
+                    <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                      <Icon name="Gauge" className="text-primary" size={20} />
+                      Счётчики и приборы учёта
+                    </h3>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between"><span>Установка счётчика воды</span><span className="font-semibold">от 1 400 ₽</span></div>
+                      <div className="flex justify-between"><span>Замена счётчика воды</span><span className="font-semibold">от 1 200 ₽</span></div>
+                      <div className="flex justify-between"><span>Поверка счётчика на месте</span><span className="font-semibold">от 800 ₽</span></div>
+                    </div>
+                  </div>
+
+                  <div className="pb-4">
+                    <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+                      <Icon name="Wrench" className="text-primary" size={20} />
+                      Дополнительные работы
+                    </h3>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between"><span>Устранение засора механическим способом</span><span className="font-semibold">от 1 500 ₽</span></div>
+                      <div className="flex justify-between"><span>Устранение течи крана</span><span className="font-semibold">от 600 ₽</span></div>
+                      <div className="flex justify-between"><span>Замена гибкой подводки</span><span className="font-semibold">от 400 ₽</span></div>
+                      <div className="flex justify-between"><span>Штробление стен под трубы (1 м)</span><span className="font-semibold">от 500 ₽</span></div>
+                      <div className="flex justify-between"><span>Выезд мастера</span><span className="font-semibold">Бесплатно</span></div>
+                    </div>
+                  </div>
+
+                  <div className="bg-muted p-4 rounded-lg">
+                    <p className="text-sm text-muted-foreground">
+                      * Цены указаны без стоимости материалов. Окончательная стоимость рассчитывается после осмотра объекта.
+                      Минимальная стоимость выезда при заказе работ до 2000 ₽ составляет 500 ₽.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
             </Card>
           </div>
         </div>
