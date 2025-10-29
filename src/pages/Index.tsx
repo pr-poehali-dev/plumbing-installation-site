@@ -461,7 +461,7 @@ const Index = () => {
                   <Icon name="Mail" className="text-primary mt-1" size={24} />
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">info@santeh-montazh.ru</div>
+                    <div className="text-muted-foreground">info@santeh-trendplus.ru</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -512,7 +512,7 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Icon name="Wrench" size={32} />
-            <span className="text-2xl font-bold">СантехМонтаж</span>
+            <span className="text-2xl font-bold">СантехТрендПлюс</span>
           </div>
           <p className="text-secondary-foreground/80 mb-4">
             Профессиональный монтаж сантехнических систем с 2009 года
@@ -527,7 +527,7 @@ const Index = () => {
           </div>
           <Separator className="my-6 bg-secondary-foreground/20" />
           <p className="text-sm text-secondary-foreground/60">
-            © 2024 СантехМонтаж. Все права защищены.
+            © 2024 СантехТрендПлюс. Все права защищены.
           </p>
         </div>
       </footer>
