@@ -604,6 +604,38 @@ const Index = () => {
             <a href="#contacts" className="hover:text-primary transition-colors">Контакты</a>
           </div>
           <Separator className="my-6 bg-secondary-foreground/20" />
+          <div className="flex justify-center gap-4 mb-6">
+            <a 
+              href="https://wa.me/79991234567" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-secondary-foreground/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            >
+              <Icon name="MessageCircle" size={20} />
+            </a>
+            <a 
+              href="https://t.me/santehtrendplus" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-secondary-foreground/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            >
+              <Icon name="Send" size={20} />
+            </a>
+            <a 
+              href="https://vk.com/santehtrendplus" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-secondary-foreground/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            >
+              <Icon name="Users" size={20} />
+            </a>
+            <a 
+              href="tel:+79991234567"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-secondary-foreground/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            >
+              <Icon name="Phone" size={20} />
+            </a>
+          </div>
           <p className="text-sm text-secondary-foreground/60">
             © 2024 СантехТрендПлюс. Все права защищены.
           </p>
