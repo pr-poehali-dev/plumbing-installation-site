@@ -157,6 +157,13 @@ const Index = () => {
                   О нас
                 </a>
                 <a 
+                  href="#reviews" 
+                  className="text-lg hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Отзывы
+                </a>
+                <a 
                   href="#portfolio" 
                   className="text-lg hover:text-primary transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
@@ -481,6 +488,160 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="reviews" className="py-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Отзывы клиентов</h2>
+            <p className="text-xl text-muted-foreground">Что говорят о нашей работе</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Алексей М.</CardTitle>
+                    <div className="flex gap-1 mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Отличная работа! Заменили всю сантехнику в квартире. Мастера пришли вовремя, работали аккуратно, 
+                  убрали за собой. Цены адекватные, качество на высоте. Рекомендую!
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Ольга К.</CardTitle>
+                    <div className="flex gap-1 mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Установили систему отопления в частном доме. Всё сделали быстро и качественно. 
+                  Особенно порадовала гарантия на 3 года. Спасибо большое за профессионализм!
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Дмитрий В.</CardTitle>
+                    <div className="flex gap-1 mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Обращался для замены труб в ванной. Работу выполнили на отлично! Мастера очень опытные, 
+                  дали полезные советы. Цены честные, без скрытых доплат. Буду обращаться ещё!
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Елена П.</CardTitle>
+                    <div className="flex gap-1 mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Устанавливали счётчики воды. Приехали в тот же день, всё установили за час. 
+                  Мастер всё объяснил, показал как пользоваться. Очень довольна сервисом!
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Сергей Н.</CardTitle>
+                    <div className="flex gap-1 mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Монтировали душевую кабину. Работа выполнена идеально, всё работает как часы. 
+                  Ребята профессионалы своего дела. Цена соответствует качеству. Рекомендую всем!
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Мария Т.</CardTitle>
+                    <div className="flex gap-1 mt-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Заменили все радиаторы в квартире. Работали быстро, аккуратно, без лишнего шума и грязи. 
+                  После работы всё убрали. Теперь в квартире тепло и уютно. Спасибо!
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="portfolio" className="py-20 px-4 bg-muted/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
@@ -636,6 +797,7 @@ const Index = () => {
             <a href="#calculator" className="hover:text-primary transition-colors">Калькулятор</a>
             <a href="#price" className="hover:text-primary transition-colors">Прайс</a>
             <a href="#about" className="hover:text-primary transition-colors">О нас</a>
+            <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
             <a href="#portfolio" className="hover:text-primary transition-colors">Работы</a>
             <a href="#contacts" className="hover:text-primary transition-colors">Контакты</a>
           </div>
