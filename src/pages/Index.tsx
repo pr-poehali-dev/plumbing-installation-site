@@ -343,6 +343,10 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Прайс-лист</h2>
             <p className="text-xl text-muted-foreground">Базовые цены на популярные услуги</p>
+            <Button size="lg" className="mt-4" onClick={() => window.print()}>
+              <Icon name="Download" size={20} className="mr-2" />
+              Скачать прайс PDF
+            </Button>
           </div>
           <div className="max-w-4xl mx-auto">
             <Card>
