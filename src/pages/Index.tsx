@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -16,6 +17,7 @@ const Index = () => {
   });
 
   const [totalCost, setTotalCost] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const services = [
     {
@@ -105,10 +107,69 @@ const Index = () => {
             <a href="#about" className="hover:text-primary transition-colors">О нас</a>
             <a href="#contacts" className="hover:text-primary transition-colors">Контакты</a>
           </div>
-          <Button>
-            <Icon name="Phone" size={18} className="mr-2" />
-            Заказать звонок
-          </Button>
+          <div className="hidden md:block">
+            <Button>
+              <Icon name="Phone" size={18} className="mr-2" />
+              Заказать звонок
+            </Button>
+          </div>
+          <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="outline" size="icon">
+                <Icon name="Menu" size={24} />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px]">
+              <div className="flex flex-col gap-6 mt-8">
+                <a 
+                  href="#hero" 
+                  className="text-lg hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Главная
+                </a>
+                <a 
+                  href="#services" 
+                  className="text-lg hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Услуги
+                </a>
+                <a 
+                  href="#calculator" 
+                  className="text-lg hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Калькулятор
+                </a>
+                <a 
+                  href="#price" 
+                  className="text-lg hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Прайс
+                </a>
+                <a 
+                  href="#about" 
+                  className="text-lg hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  О нас
+                </a>
+                <a 
+                  href="#contacts" 
+                  className="text-lg hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Контакты
+                </a>
+                <Button className="w-full mt-4" onClick={() => setMobileMenuOpen(false)}>
+                  <Icon name="Phone" size={18} className="mr-2" />
+                  Заказать звонок
+                </Button>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
 
